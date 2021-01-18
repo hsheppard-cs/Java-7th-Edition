@@ -2,6 +2,13 @@ import java.util.Scanner;
 
 class chapterThreeChallengeOne
 {
+   /**
+   * Author: Hamilton Sheppard
+   * Version 1 - Roman Numerals
+   * Description: Write a program that prompts the user to enter a number within the range of 1 through 10.
+   *              The program should display the Roman numeral version of that number. If the number is 
+   *              outside the range 1 through 10, the program should display an error message.               
+   */
    public static void main(String[] args)
    {
       Scanner keyboard = new Scanner(System.in);

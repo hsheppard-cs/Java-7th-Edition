@@ -28,5 +28,5 @@ class chapterThreeChallengeTwo
          System.out.println("Magic Date");
       else
          System.out.println("Not a magic date");
-   }
-}
+   } // end of public method
+} // end of class

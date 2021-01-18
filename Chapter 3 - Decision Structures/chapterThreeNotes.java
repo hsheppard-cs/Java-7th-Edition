@@ -1,5 +1,11 @@
 class chapterThreeNotes
 {
+   /**
+   * Author: Hamilton Sheppard
+   * Version 1 - Chapter 3 Notes
+   * Purpose of this file was to further my understanding of the content read in
+   * Java: From Control Structures through Objects 7th Edition
+   */
    public static void main(String[] args)
    {
       // The conditional operator
@@ -37,7 +43,7 @@ class chapterThreeNotes
      
      // formattign string arguments
      String name = "Ringo";
-     System.out.println("Your name is %s\n",name);
+     System.out.printf("Your name is %s\n",name);
    }
 }
 

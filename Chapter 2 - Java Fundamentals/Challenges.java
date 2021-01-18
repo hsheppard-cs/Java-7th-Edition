@@ -2,32 +2,39 @@ import java.util.Scanner;
 
 class Challenges
 {
+   /**
+   * Author: Hamilton Sheppard
+   * Version 1 - Chapter 2 Programming Challenges
+   * Description: After finishing the reading of Chapter 2, I went on to complete the twenty-one
+   *              programming challenges in the back of the book to further my understanding.
+   */
    public static void main(String[] args)
    {
      /*
       * Challenge #1
       * Topics used - newLine escape sequence
-      * String name = "Hamilton Sheppard";
-      * int age = 19;
-      * double annualPay = 350000;
       
-      * System.out.println("My name is " + name + ", " + "my age is " + age +
-      *                    "and\nI hope to earn $" + annualPay + " per year");
+      String name_v1 = "Hamilton Sheppard";
+      int age = 19;
+      double annualPay = 350000;
+      
+      System.out.println("My name is " + name_v1 + ", " + "my age is " + age +
+                         "and\nI hope to earn $" + annualPay + " per year");
       */
       
      /*
       * Challenge #2
-      * Topics Used - String string.charAt()
-      * String firstName = "Hamilton", middleName = "Mykel", lastName = "Sheppard";
-      * // charAt() returns the character at the specific index
+      * Topics Used - String string.charAt()\
       
-      * char firstInitial = firstName.charAt(0), middleInitial = middleName.charAt(0),
-      *      lastInitial = lastName.charAt(0);
+      String firstName = "Hamilton", middleName = "Mykel", lastName = "Sheppard";
+      // charAt() returns the character at the specific index
+      char firstInitial = firstName.charAt(0), middleInitial = middleName.charAt(0),
+           lastInitial = lastName.charAt(0);
       
-      * System.out.println("My full name is, " + firstName + " " + middleName + " " + lastName +
+      System.out.println("My full name is, " + firstName + " " + middleName + " " + lastName +
                          "\nwith the initials, " + firstInitial + middleInitial + lastInitial);
-      */
-      
+      */  
+          
      /*
       * Challenge #3
       * Topics used - newLine escape sequence
@@ -40,149 +47,152 @@ class Challenges
       * \' - Single quote
       * \" - Double quote
       
-      * String name = "Hamilton Sheppard", address = "10405 Lemington Drive, Charlotte, NC, 28227", 
-      *        phoneNumber = "980-613-1152", collegeMajor = "Computer Science";
+      String name = "Hamilton Sheppard", address = "10405 Lemington Drive, Charlotte, NC, 28227", 
+            phoneNumber = "980-613-1152", collegeMajor = "Computer Science";
       
-      * System.out.println(name + "\n" + address + "\n" + phoneNumber + "\n" + collegeMajor);
+      System.out.println(name + "\n" + address + "\n" + phoneNumber + "\n" + collegeMajor);
+      
       */
       
      /* 
       * Challenge #4
       * Topics used - newLine escape sequence
-      * System.out.println("   * \n  *** \n ***** \n******* \n ***** \n  *** \n   *");
-      * /
+      
+      System.out.println("   * \n  *** \n ***** \n******* \n ***** \n  *** \n   *");
+      */
       
      /* 
       * Challenge #5
       * Topics used - Cast Operator
-      * int totalRevenue = 4600000;
-      * double eastCostPercentage = 0.62, salesCalculation = (double)totalRevenue * eastCostPercentage;
-      * System.out.println("The East Coast Division will generate $" + salesCalculation + 
-                           "\nof the total revenue generated.");
+      
+      int totalRevenue = 4600000;
+      double eastCostPercentage = 0.62, salesCalculation = (double)totalRevenue * eastCostPercentage;
+      System.out.println("The East Coast Division will generate $" + salesCalculation + 
+                         "\nof the total revenue generated.");
       */
       
      /*
       * Challenge #6 - Land Calculation
       * Topics used - Cast Operator, newLine Escape Sequence
       * Formula: size_of_tract_of_land / size_of_an_acre
-      * int oneAcre = 43560, tractOfLand = 389767;
-      * double numOfAcres = ((double)tractOfLand) / ((double)oneAcre);
-      * System.out.println("The number of acres in a tract land with " + tractOfLand + " sqaure\nfeet is, " + 
-      *                     numOfAcres + " acres.");
+      
+      int oneAcre = 43560, tractOfLand = 389767;
+      double numOfAcres = ((double)tractOfLand) / ((double)oneAcre);
+      System.out.println("The number of acres in a tract land with " + tractOfLand + " sqaure\nfeet is, " + 
+                         numOfAcres + " acres.");
       */
       
      /*
       * Challenge #7 - Sales Tax
       * Topics used - Scanner input, newLine escape sequence
-      * double stateTax = 0.04, countyTax = 0.02, totalTax = stateTax + countyTax;
-      * Scanner keyboard = new Scanner(System.in); // Scanner class allows keyboard input to be read
-      * System.out.print("Hope you found everything ok.\nPlease enter the price of the purchased item(s): ");
-      * double input = keyboard.nextDouble();
-      * totalTax = input * totalTax;
-      * double totalOfSale = input + totalTax;
- 
-      * System.out.println("Amount of the purchase: $" + input + 
-      *                    "\nState Sales Tax: " + stateTax + "%" +
-      *                    "\nCounty Sales Tax: " + countyTax + "%" +
-      *                    "\nTotal Sales Tax: " + totalTax + "%" +
-      *                    "\nTotal of Sale: " + totalOfSale);
-      */
       
+      double stateTax = 0.04, countyTax = 0.02, totalTax = stateTax + countyTax;
+      Scanner keyboard = new Scanner(System.in); // Scanner class allows keyboard input to be read
+      System.out.print("Hope you found everything ok.\nPlease enter the price of the purchased item(s): ");
+      double input = keyboard.nextDouble();
+      totalTax = input * totalTax;
+      double totalOfSale = input + totalTax;
+ 
+      System.out.println("Amount of the purchase: $" + input + 
+                         "\nState Sales Tax: " + stateTax + "%" +
+                         "\nCounty Sales Tax: " + countyTax + "%" +
+                         "\nTotal Sales Tax: " + totalTax + "%" +
+                         "\nTotal of Sale: " + totalOfSale);
+      */
      /*
       * Challenge #8 - Cookie Calories
       * Topics used - keyword: final, Cast Operator, Scanner class
-      * A bag of cookies holds 40 cookies
+      * Note: A bag of cookies holds 40 cookies
       * There are 10 servings in the bag and a serving equals 300 calories
       * 10/40 - Serving per cookie = 0.25
       
-      * Scanner keyboard = new Scanner(System.in);
-      * System.out.print("Hi! How many cookies have you ate?\nEnter Here: ");
-      * final double servingPerCookie = 0.25, caloriePerServing = 300;
-      * int input = keyboard.nextInt();
+      Scanner keyboard = new Scanner(System.in);
+      System.out.print("Hi! How many cookies have you ate?\nEnter Here: ");
+      final double servingPerCookie = 0.25, caloriePerServing = 300;
+      int input = keyboard.nextInt();
       
-      * double servings = (double)input * servingPerCookie, calories = servings * caloriePerServing;
-      * System.out.println("You have consumed " + calories + " calories as you ate " + input + " cookies. Bye!");
+      double servings = (double)input * servingPerCookie, calories = servings * caloriePerServing;
+      System.out.println("You have consumed " + calories + " calories as you ate " + input + " cookies. Bye!");
       */
-      
      /*
       * Challenge #9 - Miles-per-Gallon
       * Formula used: MPG = Miles Driven / Gallons of gas used
-     
-      * Scanner keyboard = new Scanner(System.in);
-      * System.out.print("Hi! How many miles have you drove?\nEnter here: ");
-      * double milesInput = keyboard.nextDouble();
-      * System.out.print("Hi Again! How many gallons of gas did you use?\nEnter here: ");
-      * double gallonsInput = keyboard.nextDouble(), MPG = milesInput / gallonsInput;
       
-      * System.out.println("A total of " + MPG + " miles per gallon were calculated. Bye!");
+      Scanner keyboard = new Scanner(System.in);
+      System.out.print("Hi! How many miles have you drove?\nEnter here: ");
+      double milesInput = keyboard.nextDouble();
+      
+      System.out.print("Hi Again! How many gallons of gas did you use?\nEnter here: ");
+      double gallonsInput = keyboard.nextDouble(), MPG = milesInput / gallonsInput;
+      
+      System.out.println("A total of " + MPG + " miles per gallon were calculated. Bye!");
       */
       
      /*
       * Challenge #10 - Test Average
       * Topics used - Scanner class, keyword final
+       
+      Scanner keyboard = new Scanner(System.in);
+      final int numOfTest = 3;
+      double score1, score2, score3, average;
       
-      * Scanner keyboard = new Scanner(System.in);
-      * final int numOfTest = 3;
-      * double score1, score2, score3, average;
+      System.out.print("Hi! Enter test score #1: ");
+      score1 = keyboard.nextDouble();
       
-      * System.out.print("Hi! Enter test score #1: ");
-      * score1 = keyboard.nextDouble();
+      System.out.print("Enter test score #2: ");
+      score2 = keyboard.nextDouble();
       
-      * System.out.print("Enter test score #2: ");
-      * score2 = keyboard.nextDouble();
+      System.out.print("Enter test score #3: ");
+      score3 = keyboard.nextDouble();
       
-      * System.out.print("Enter test score #3: ");
-      * score3 = keyboard.nextDouble();
-      
-      * average = (score1 + score2 + score3) / numOfTest;
-      * System.out.println("Hi! Your calculated test average is " + average);
+      average = (score1 + score2 + score3) / numOfTest; // calculate average
+      System.out.println("Hi! Your calculated test average is " + average);
       */
       
      /*
       * Challenge #11 - Circuit Board Profit
       * Formula: Profit = Retail price * 0.4
+       
+      Scanner keyboard = new Scanner(System.in);
+      final double companyProfit = 0.4;
+      System.out.print("Hi! How much was the circuit you purchased?\nEnter here: ");
+      double retailPrice = keyboard.nextDouble(), profit = retailPrice * companyProfit;
       
-      * Scanner keyboard = new Scanner(System.in);
-      * final double companyProfit = 0.4;
-      * System.out.print("Hi! How much was the circuit you purchased?\nEnter here: ");
-      * double retailPrice = keyboard.nextDouble(), profit = retailPrice * companyProfit;
-      
-      * System.out.println("Thank you! You have made me $" + profit + ". Bye!");
+      System.out.println("Thank you! You have made me $" + profit + ". Bye!");
       */
       
      /*
       * Challenge #12 - String Manipulator
       * Topics used - Common string methods, string.length(), string.toUpperCase(), string.toLowerCase()
       
-      * Scanner keyboard = new Scanner(System.in);
-      * System.out.print("Hi! Please enter your favorite city here: ");
-      * String favCity = keyboard.nextLine();
+      Scanner keyboard = new Scanner(System.in);
+      System.out.print("Hi! Please enter your favorite city here: ");
+      String favCity = keyboard.nextLine();
       
-      * System.out.println("City Entered: " + favCity +
-      *                    "\nNumber of characters in " + favCity + " is " + favCity.length() + 
-      *                    "\n" + favCity + " in lowercase letters is " + favCity.toLowerCase() + 
-      *                    "\n" + favCity + " in uppercase letters is " + favCity.toUpperCase());
-                         
-      */   
+      System.out.println("City Entered: " + favCity +
+                         "\nNumber of characters in " + favCity + " is " + favCity.length() + 
+                         "\n" + favCity + " in lowercase letters is " + favCity.toLowerCase() + 
+                         "\n" + favCity + " in uppercase letters is " + favCity.toUpperCase());
+      */                    
       
      /* 
       * Challenge #13 - Restaurant Bill
       * Topics used - final keyword, Scanner class, newLine escape sequence
       
-      * final double originalTax = 0.0675, originalTip = 0.2;
-      * Scanner keyboard = new Scanner(System.in);
-      * System.out.print("Hope you enjoyed your meal! Please enter\nthe meal charge amt here: ");
-      * double originalMealCharge = keyboard.nextDouble();
+      final double originalTax = 0.0675, originalTip = 0.2;
+      Scanner keyboard = new Scanner(System.in);
+      System.out.print("Hope you enjoyed your meal! Please enter\nthe meal charge amt here: ");
+      double originalMealCharge = keyboard.nextDouble();
       
-      * double taxAmount = originalMealCharge * originalTax;
-      * double adjustedMealCharge = originalMealCharge + taxAmount;
-      * double tipAmount = adjustedMealCharge * originalTip;
-      * adjustedMealCharge = adjustedMealCharge + tipAmount;
+      double taxAmount = originalMealCharge * originalTax,
+      adjustedMealCharge = originalMealCharge + taxAmount,
+      tipAmount = adjustedMealCharge * originalTip,
+      adjustedMealCharge = adjustedMealCharge + tipAmount;
       
-      * System.out.println("Meal Charge: $" + originalMealCharge +
-                         * "\nTax Amount: $" + taxAmount +
-                         * "\nTip Amount: $" + tipAmount + 
-                         * "\nTotal Bill: $" + adjustedMealCharge);
+      System.out.println("Meal Charge: $" + originalMealCharge +
+                         "\nTax Amount: $" + taxAmount +
+                         "\nTip Amount: $" + tipAmount + 
+                         "\nTotal Bill: $" + adjustedMealCharge);
       */
       
      /*
