@@ -7,6 +7,7 @@ class Challenges
    * Version 1 - Chapter 2 Programming Challenges
    * Description: After finishing the reading of Chapter 2, I went on to complete the twenty-one
    *              programming challenges in the back of the book to further my understanding.
+   * Note: Descriptions for each challenge are located at the bottom of the program.
    */
    public static void main(String[] args)
    {
@@ -99,6 +100,7 @@ class Challenges
                          "\nTotal Sales Tax: " + totalTax + "%" +
                          "\nTotal of Sale: " + totalOfSale);
       */
+      
      /*
       * Challenge #8 - Cookie Calories
       * Topics used - keyword: final, Cast Operator, Scanner class
@@ -114,6 +116,7 @@ class Challenges
       double servings = (double)input * servingPerCookie, calories = servings * caloriePerServing;
       System.out.println("You have consumed " + calories + " calories as you ate " + input + " cookies. Bye!");
       */
+      
      /*
       * Challenge #9 - Miles-per-Gallon
       * Formula used: MPG = Miles Driven / Gallons of gas used
@@ -199,46 +202,46 @@ class Challenges
       * Challenge #14 - Male and Female Percentage
       * Topics used - Scanner, Cast Operator
       
-      * Scanner keyboard = new Scanner(System.in);
-      * int boysRegistered, girlsRegistered, totalKids;
-      * double boysPercentage, girlsPercentage;
+      Scanner keyboard = new Scanner(System.in);
+      int boysRegistered, girlsRegistered, totalKids;
+      double boysPercentage, girlsPercentage;
       
-      * System.out.print("Hi! How many boys have registered? ");
-      * boysRegistered = keyboard.nextInt();
+      System.out.print("Hi! How many boys have registered? ");
+      boysRegistered = keyboard.nextInt();
       
-      * System.out.print("And how many girls have registered? ");
-      * girlsRegistered = keyboard.nextInt();
+      System.out.print("And how many girls have registered? ");
+      girlsRegistered = keyboard.nextInt();
       
-      * totalKids = boysRegistered + girlsRegistered;
-      * boysPercentage = (double)boysRegistered / (double)totalKids;
-      * girlsPercentage = (double)girlsRegistered / (double)totalKids;
+      totalKids = boysRegistered + girlsRegistered;
+      boysPercentage = (double)boysRegistered / (double)totalKids;
+      girlsPercentage = (double)girlsRegistered / (double)totalKids;
       
-      * System.out.println("There are a total of " + totalKids + " in the class. " +
-      *                   "\nOf that total, there is a percentage of " + boysPercentage + "% for the boys." +
-      *                   "\nAnd, a percentage of " + girlsPercentage + "% for the girls.");
+      System.out.println("There are a total of " + totalKids + " in the class. " +
+                         "\nOf that total, there is a percentage of " + boysPercentage + "% for the boys." +
+                         "\nAnd, a percentage of " + girlsPercentage + "% for the girls.");
       */
       
      /*
       * Challenge #15 - Stock Commission
-      * 
-      * double amtPaid = 600 * 21.77, 
-      *        commission = amtPaid * 0.02, 
-      *        totalAmt = amtPaid + commission;
       
-      * System.out.println("The amount paid for the stock alone: $" + amtPaid +
-      *                   "\nThe amount of the commission: $" + commission + 
-      *                   "\nThe total amount paid: $" + totalAmt); 
+      double amtPaid = 600 * 21.77, 
+             commission = amtPaid * 0.02, 
+             totalAmt = amtPaid + commission;
+      
+      System.out.println("The amount paid for the stock alone: $" + amtPaid +
+                         "\nThe amount of the commission: $" + commission + 
+                         "\nThe total amount paid: $" + totalAmt); 
       */
       
      /* 
       * Challenge #16 - Energy Drink Consumption
       
-      * final int participants = 12467;
-      * double percentageOfDrinksPerWeek = (double)participants * 0.14;
-      * double percentageOfCitrusFlavored = (double)participants * 0.64;
+      final int participants = 12467;
+      double percentageOfDrinksPerWeek = (double)participants * 0.14;
+      double percentageOfCitrusFlavored = (double)participants * 0.64;
       
-      * System.out.println("Approximate number of those who purchase one or more\nenergy drinks per week: " + percentageOfDrinksPerWeek +
-      *                   "\nApproximate number of those who prefer citrus-flavored: " + percentageOfCitrusFlavored);
+      System.out.println("Approximate number of those who purchase one or more\nenergy drinks per week: " + percentageOfDrinksPerWeek +
+                         "\nApproximate number of those who prefer citrus-flavored: " + percentageOfCitrusFlavored);
       */
       
      /*
@@ -248,15 +251,15 @@ class Challenges
       * 2) 1 cup of butter - 0.02083333 per cookie
       * 3) 2.75 cups of flour - 0.05729167 per cookie
       
-      * final double sugarPerCookie = 0.03125, butterPerCookie = 0.02083333, flourPerCookie = 0.05729167;
-      * double adjustedSugar, adjustedButter, adjustedFlour;
-      * Scanner keyboard = new Scanner(System.in);
-      * System.out.print("How many cookies would you like to make? ");
-      * int cookieInput = keyboard.nextInt();
-      * adjustedSugar = (double)cookieInput * sugarPerCookie;
-      * adjustedButter = (double)cookieInput * butterPerCookie;
-      * adjustedFlour = (double)cookieInput * flourPerCookie;
-      * System.out.println("You are making " + cookieInput + " cookies." +
+      final double sugarPerCookie = 0.03125, butterPerCookie = 0.02083333, flourPerCookie = 0.05729167;
+      double adjustedSugar, adjustedButter, adjustedFlour;
+      Scanner keyboard = new Scanner(System.in);
+      System.out.print("How many cookies would you like to make? ");
+      int cookieInput = keyboard.nextInt();
+      adjustedSugar = (double)cookieInput * sugarPerCookie;
+      adjustedButter = (double)cookieInput * butterPerCookie;
+      adjustedFlour = (double)cookieInput * flourPerCookie;
+      System.out.println("You are making " + cookieInput + " cookies." +
                          "\nRequiring:\n1) " + adjustedSugar + " cups of sugar." +
                          "\n2) " + adjustedButter + " cups of butter." +
                          "\n3) " + adjustedFlour + " cups of flour.");
@@ -299,8 +302,7 @@ class Challenges
      
     /*
      * Challenge #19 - Stock Transcation Program
-     
-     
+    
      double amountPaid = 1000 * 32.87;
      double commissionPaid = amountPaid * 0.02;
      double finalAmtPaid = amountPaid + commissionPaid; // used to calculate the profit
@@ -325,17 +327,17 @@ class Challenges
      * E - amount of space used by an end-post assembly
      * S - space between vines, in feet
      
-     * Scanner keyboard = new Scanner(System.in);
-     * double lengthOfRow, spaceUsedAssembly, spaceBtwnVines, numGrapeVines;
-     * System.out.print("Please enter the length of the row, in feet: ");
-     * lengthOfRow = keyboard.nextDouble();
-     * System.out.print("Please enter the space used by an end-post assembly in feet: ");
-     * spaceUsedAssembly = keyboard.nextDouble();
-     * System.out.print("Please enter the amount of space between the vines, in feet: ");
-     * spaceBtwnVines = keyboard.nextDouble();
+     Scanner keyboard = new Scanner(System.in);
+     double lengthOfRow, spaceUsedAssembly, spaceBtwnVines, numGrapeVines;
+     System.out.print("Please enter the length of the row, in feet: ");
+     lengthOfRow = keyboard.nextDouble();
+     System.out.print("Please enter the space used by an end-post assembly in feet: ");
+     spaceUsedAssembly = keyboard.nextDouble();
+     System.out.print("Please enter the amount of space between the vines, in feet: ");
+     spaceBtwnVines = keyboard.nextDouble();
      
-     * numGrapeVines = (lengthOfRow - (2 * spaceUsedAssembly)) / (spaceBtwnVines);
-     * System.out.print("Total number of grapevines that will fit: " + numGrapeVines);
+     numGrapeVines = (lengthOfRow - (2 * spaceUsedAssembly)) / (spaceBtwnVines);
+     System.out.print("Total number of grapevines that will fit: " + numGrapeVines);
      */
      
     /*
@@ -348,7 +350,7 @@ class Challenges
      * N - Number of times per year the interest in compounded
      * T - Specified number of years
      
-     // Math.pow(x,numraisedto)
+     Math.pow(x,numraisedto)
      
      Scanner keyboard = new Scanner(System.in);
      double principle, interest, compound, years, finalAmt;
