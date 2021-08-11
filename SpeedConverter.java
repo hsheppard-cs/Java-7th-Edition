@@ -3,9 +3,6 @@
    
    The table that your program displays shows speeds from 60 kph through 130 kph, in increments of 10,
    along with their values converted to miles per hour.
-   
-   Write a for loop that uses a counter variable to hold the KPH speeds. The counter's starting value will be 
-   60, its ending value will be 130, and you will add 10 to the counter variable after each iteration. 
 */ 
 
 public class SpeedConverter
